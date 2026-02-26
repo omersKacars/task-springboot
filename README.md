@@ -5,7 +5,6 @@ Bu proje, modern bir Java Backend uygulamasının sahip olması gereken tüm tem
 ---
 
 ## 🛠️ Teknolojiler
-
 - **Java 17/21**
 - **Spring Boot 3.x** (Web, Data JPA, Validation)
 - **PostgreSQL** (Veritabanı)
@@ -17,7 +16,6 @@ Bu proje, modern bir Java Backend uygulamasının sahip olması gereken tüm tem
 ---
 
 ## 🏗️ Mimari Yapı
-
 Projede **Katmanlı Mimari (Layered Architecture)** kullanılmıştır:
 
 - **Controller:** REST uç noktaları ve HTTP istek yönetimi.
@@ -29,35 +27,39 @@ Projede **Katmanlı Mimari (Layered Architecture)** kullanılmıştır:
 ---
 
 ## ⚙️ Kurulum ve Çalıştırma
-
 Proje Dockerize edildiği için yerelinizde PostgreSQL kurulumuna gerek yoktur.
 
 ### 1. Projeyi Klonlayın
 ```bash
 git clone https://github.com/omerskacars/task-tracer-api.git
-2. Veritabanını Başlatın (Docker)
-code
-Bash
+```
+
+### 2. Veritabanını Başlatın (Docker)
+```bash
 docker compose up -d
-3. Uygulamayı Çalıştırın
-code
-Bash
+```
+
+### 3. Uygulamayı Çalıştırın
+```bash
 ./mvnw spring-boot:run
-📝 API Dökümantasyonu
+```
+
+---
+
+## 📝 API Dökümantasyonu
 Uygulama çalıştıktan sonra aşağıdaki adresten Swagger arayüzüne erişebilir ve API'yi canlı olarak test edebilirsiniz:
-👉 http://localhost:8080/swagger-ui/index.html
-🧪 Testler
+
+👉[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+---
+
+## 🧪 Testler
 Birim (Unit) testleri çalıştırmak ve kod kalitesini doğrulamak için:
-code
-Bash
+```bash
 mvn test
-👨‍🏫 Proje Hakkında
+```
+
+---
+
+## 👨‍🏫 Proje Hakkında
 Bu proje, bir Java Eğitmeni ve Test Otomasyon Mühendisi bakış açısıyla; temiz kod (clean code), test edilebilirlik ve sürdürülebilir mimari prensiplerini sergilemek amacıyla geliştirilmiştir.
-code
-Code
-### Nasıl Uygulayacaksınız?
-1. GitHub deponuzda **README.md** dosyasına gidin.
-2. Sağ üstteki **kalem (Edit)** simgesine tıklayın.
-3. Mevcut tüm yazıları silin.
-4. Yukarıdaki kod bloğunun tamamını yapıştırın.
-5. Sayfanın altındaki **"Commit changes"** (Yeşil buton) ile kaydedin.
